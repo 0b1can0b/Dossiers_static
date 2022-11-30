@@ -71,3 +71,8 @@ nav.header-nav {
 .ui.icon.input {
   width: 100%;
 }
+
+.contacts-popup-tabs.tabular.menu {
+  margin: 0 0 0 0;
+  margin-bottom: -1rem;
+}

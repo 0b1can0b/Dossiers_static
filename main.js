@@ -1,11 +1,19 @@
-$('.button').popup({
-  on: 'click',
-  position: 'bottom right',
+$(".button").popup({
+  on: "click",
+  position: "bottom right",
   inline: false,
 });
 
-$('.menu .item').tab();
+$(".menu .item").tab();
 
-$('.contacts-popup-tabs .item').tab({
-  context: $('.contacts-popup-tabs'),
+$(".contacts-popup-tabs .item").tab({
+  context: $(".contacts-popup-tabs"),
+});
+
+$(".contacts-popup-tabs a").click(function () {
+  $(".contacts-popup-tabs a.active").removeClass("active");
+  $(".contacts-popup-tabs-content.active").removeClass("active");
+  $(this).addClass("active");
+  $(`.contacts-popup-tabs-content[data-tab="${$(this).attr("data-tab")}"]`).addClass("active");
+
 });
