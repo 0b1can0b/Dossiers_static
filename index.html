@@ -48,117 +48,116 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <header>
-        <div class="header-inner">
-          <div class="header-top">
-            <a href="#" class="logo">
-              <img src="https://img.logoipsum.com/239.svg" alt="logo"
-            /></a>
-            <div class="dashboard">
-              <button class="dashboard-user ui basic button">
-                <i class="user outline icon teal"></i>
-                Nil Auberge
+    <header>
+      <div class="header-inner">
+        <div class="header-top">
+          <a href="#" class="logo">
+            <img src="https://img.logoipsum.com/239.svg" alt="logo"
+          /></a>
+          <div class="dashboard">
+            <button class="dashboard-user ui basic button">
+              <i class="user outline icon teal"></i>
+              Nil Auberge
+            </button>
+            <div class="dashboard-logout">
+              <button class="ui icon button">
+                <i class="power off icon"></i>
               </button>
-              <div class="dashboard-logout">
-                <button class="ui icon button">
-                  <i class="power off icon"></i>
-                </button>
-              </div>
-              <div class="dashboard-files">
-                <div class="ui teal label">
-                  Aucun dossier à signer et aucun dossier à télécharger
-                </div>
+            </div>
+            <div class="dashboard-files">
+              <div class="ui teal label">
+                Aucun dossier à signer et aucun dossier à télécharger
               </div>
             </div>
           </div>
-          <div class="header-bottom">
-            <nav class="header-nav">
-              <ul class="header-nav-tabs ui buttons">
-                <li class="header-nav-tab-folder ui button">
-                  <i class="folder outline icon teal"></i>
-                  Dossiers
-                </li>
-                <li class="header-nav-tab-search ui button">
-                  <i class="search icon teal"></i>
-                  Recherche
-                </li>
-              </ul>
-              <ul class="header-nav-tools ui buttons">
-                <li class="header-nav-tool-contacts ui button dropdown">
-                  <i class="address card outline icon teal"></i>
-                  Contacts
-                  <i class="dropdown icon"></i>
-                </li>
-                <div class="tool-contacts-popup ui popup">
-                  <div class="tool-contacts-popup-inner">
-                    <div class="ui buttons">
-                      <div class="ui button">
-                        <i class="user plus icon"></i>
-                        Créer un nouveau contact
-                      </div>
-                      <div class="ui button">
-                        <i class="user plus icon"></i>
-                        Créer un nouveau groupe
-                      </div>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-nav-tabs ui buttons">
+              <li class="header-nav-tab-folder ui button">
+                <i class="folder outline icon teal"></i>
+                Dossiers
+              </li>
+              <li class="header-nav-tab-search ui button">
+                <i class="search icon teal"></i>
+                Recherche
+              </li>
+            </ul>
+            <ul class="header-nav-tools ui buttons">
+              <li class="header-nav-tool-contacts ui button dropdown">
+                <i class="address card outline icon teal"></i>
+                Contacts
+                <i class="dropdown icon"></i>
+              </li>
+              <div class="tool-contacts-popup ui popup">
+                <div class="tool-contacts-popup-inner">
+                  <div class="ui buttons">
+                    <div class="ui button">
+                      <i class="user plus icon"></i>
+                      Créer un nouveau contact
                     </div>
-                    <div class="ui search">
-                      <div class="ui icon input">
-                        <input
-                          class="contacts-search"
-                          type="text"
-                          placeholder="Saisir les critères de filtrage"
-                        />
-                        <i class="search icon"></i>
-                      </div>
-                    </div>
-                    <div class="ui divider"></div>
-                    <div class="contacts-popup-tabs ui tabular menu">
-                      <a class="item active" data-tab="first"
-                        >Contacts personnels</a
-                      >
-                      <a class="item" data-tab="second">Contacts partagés</a>
-                    </div>
-                    <div
-                      class="
-                        contacts-popup-tabs-content
-                        ui
-                        bottom
-                        attached
-                        active
-                        tab
-                        segment
-                      "
-                      data-tab="first"
-                    >
-                      Aucun contact ou groupe n'a été trouvé! Utilisez le champ
-                      de
-                    </div>
-                    <div
-                      class="
-                        contacts-popup-tabs-content
-                        ui
-                        bottom
-                        attached
-                        tab
-                        segment
-                      "
-                      data-tab="second"
-                    >
-                      recherche pour trouver des contacts partagés!
+                    <div class="ui button">
+                      <i class="user plus icon"></i>
+                      Créer un nouveau groupe
                     </div>
                   </div>
+                  <div class="ui search">
+                    <div class="ui icon input">
+                      <input
+                        class="contacts-search"
+                        type="text"
+                        placeholder="Saisir les critères de filtrage"
+                      />
+                      <i class="search icon"></i>
+                    </div>
+                  </div>
+                  <div class="ui divider"></div>
+                  <div class="contacts-popup-tabs ui tabular menu">
+                    <a class="item active" data-tab="first"
+                      >Contacts personnels</a
+                    >
+                    <a class="item" data-tab="second">Contacts partagés</a>
+                  </div>
+                  <div
+                    class="
+                      contacts-popup-tabs-content
+                      ui
+                      bottom
+                      attached
+                      active
+                      tab
+                      segment
+                    "
+                    data-tab="first"
+                  >
+                    Aucun contact ou groupe n'a été trouvé! Utilisez le champ de
+                  </div>
+                  <div
+                    class="
+                      contacts-popup-tabs-content
+                      ui
+                      bottom
+                      attached
+                      tab
+                      segment
+                    "
+                    data-tab="second"
+                  >
+                    recherche pour trouver des contacts partagés!
+                  </div>
                 </div>
-                <li class="tool-settings ui button">
-                  <i class="cog icon teal"></i>
-                  Préférences
-                </li>
-              </ul>
-            </nav>
-          </div>
+              </div>
+              <li class="tool-settings ui button">
+                <i class="cog icon teal"></i>
+                Préférences
+              </li>
+            </ul>
+          </nav>
         </div>
-      </header>
-    </main>
+      </div>
+    </header>
+    <main></main>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
