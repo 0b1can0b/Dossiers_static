@@ -4,11 +4,11 @@ $('.button').popup({
   inline: false,
 });
 
-$('.menu .item').tab();
+// $('.menu .item').tab();
 
-$('.contacts-popup-tabs .item').tab({
-  context: $('.contacts-popup-tabs'),
-});
+// $('.contacts-popup-tabs .item').tab({
+//   context: $('.contacts-popup-tabs'),
+// });
 
 $('.contacts-popup-tabs a').click(function () {
   $('.contacts-popup-tabs a.active').removeClass('active');
