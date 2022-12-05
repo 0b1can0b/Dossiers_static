@@ -75,18 +75,18 @@
         </div>
         <div class="header-bottom">
           <nav class="header-nav">
-            <ul class="header-nav-tabs ui buttons">
-              <li class="header-nav-tab-folder ui button">
+            <div class="header-nav-tabs ui buttons">
+              <button class="dossiers-button ui button">
                 <i class="folder outline icon teal"></i>
                 Dossiers
-              </li>
-              <li class="header-nav-tab-search ui button">
+              </button>
+              <button class="recherche-button ui button">
                 <i class="search icon teal"></i>
                 Recherche
-              </li>
-            </ul>
+              </button>
+            </div>
             <ul class="header-nav-tools ui buttons">
-              <li class="header-nav-tool-contacts ui button dropdown">
+              <li class="tool-contacts ui button dropdown">
                 <i class="address card outline icon teal"></i>
                 Contacts
                 <i class="dropdown icon"></i>
@@ -137,12 +137,410 @@
               <li class="tool-settings ui button">
                 <i class="cog icon teal"></i>
                 Préférences
+                <i class="dropdown icon"></i>
               </li>
+              <div class="tool-settings-popup ui popup">
+                <div class="tool-settings-popup-inner">
+                  <div class="user">
+                    <i class="user outline icon teal"></i>
+                    Nil Auberge (thewebizy)
+                  </div>
+                  <div class="ui divider"></div>
+                  <table class="ui very basic table">
+                    <tbody>
+                      <tr>
+                        <td>Domaine</td>
+                        <td>KWP</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Email</td>
+                        <td>nilextra@gmail.Com</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Société</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Titre</td>
+                        <td>
+                          <div class="ui input">
+                            <input type="text" placeholder="Search..." />
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="ui"
+                            data-tooltip="Ma position dans ma société (avant-vente, etc.)"
+                            data-position="top right"
+                          >
+                            <i class="info circle icon"></i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Téléphone</td>
+                        <td>
+                          <div class="ui input">
+                            <input type="text" placeholder="Search..." />
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="ui"
+                            data-tooltip="Ma position dans ma société (avant-vente, etc.)"
+                            data-position="top right"
+                          >
+                            <i class="info circle icon"></i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Type d'authentification</td>
+                        <td>Implicite</td>
+                        <td>
+                          <div
+                            class="ui"
+                            data-tooltip="Ma position dans ma société (avant-vente, etc.)"
+                            data-position="top right"
+                          >
+                            <i class="info circle icon"></i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Mot de passe</td>
+                        <td>
+                          <a href="#"
+                            >Cliquez pour changer votre mot de passe</a
+                          >
+                        </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Langue</td>
+                        <td>
+                          <div class="ui selection dropdown">
+                            <input type="hidden" name="langue" />
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Langue</div>
+                            <div class="menu">
+                              <div class="header">
+                                Disponible dans l'interface Web
+                              </div>
+                              <div class="divider"></div>
+                              <div class="item" data-value="Anglais">
+                                Anglais
+                              </div>
+                              <div class="item" data-value="Français">
+                                Français
+                              </div>
+                              <div class="divider"></div>
+                              <div class="header">
+                                Disponible dans l'interface Web
+                              </div>
+                              <div class="divider"></div>
+                              <div class="item" data-value="Allemand">
+                                Allemand
+                              </div>
+                              <div class="item" data-value="Espagnol">
+                                Espagnol
+                              </div>
+                              <div class="item" data-value="Italien">
+                                Italien
+                              </div>
+                              <div class="item" data-value="Portugais">
+                                Portugais
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="ui"
+                            data-tooltip="Ma position dans ma société (avant-vente, etc.)"
+                            data-position="top right"
+                          >
+                            <i class="info circle icon"></i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Durée d'affichage des <br />
+                          dossiers terminés
+                        </td>
+                        <td>
+                          <div class="ui input">
+                            <input
+                              type="number"
+                              value="60"
+                              placeholder="Search..."
+                            />
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="ui"
+                            data-tooltip="Ma position dans ma société (avant-vente, etc.)"
+                            data-position="top right"
+                          >
+                            <i class="info circle icon"></i>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="ui divider"></div>
+                  <div class="ui styled accordion">
+                    <div class="title">
+                      <i class="dropdown icon"></i>
+                      What is a dog?
+                    </div>
+                    <div class="content">
+                      <table class="ui very basic table">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="ui checkbox">
+                                <input type="checkbox" name="example" />
+                                <label>Quand je crée un dossier</label>
+                              </div>
+                            </td>
+                            <td>
+                              <div
+                                class="ui"
+                                data-tooltip="Ma position dans ma société (avant-vente, etc.)"
+                                data-position="top right"
+                              >
+                                <i class="info circle icon"></i>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="ui checked checkbox">
+                                <input type="checkbox" name="example" />
+                                <label>Quand je dois signer un dossier</label>
+                              </div>
+                            </td>
+                            <td>
+                              <div
+                                class="ui"
+                                data-tooltip="Ma position dans ma société (avant-vente, etc.)"
+                                data-position="top right"
+                              >
+                                <i class="info circle icon"></i>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="ui checked checkbox">
+                                <input type="checkbox" name="example" />
+                                <label
+                                  >Quand un destinataire signe un dossier</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <div
+                                class="ui"
+                                data-tooltip="Ma position dans ma société (avant-vente, etc.)"
+                                data-position="top right"
+                              >
+                                <i class="info circle icon"></i>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <button class="dashboard-user fluid ui basic button">
+                    <i class="question circle outline icon"></i>
+                    À propos de Protect & Sign Portal
+                  </button>
+                </div>
+              </div>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="main-inner">
+        <div class="dossiers">
+          <div class="filters">
+            <div class="filter-left">
+              <button class="filter-reset ui icon button teal">
+                <i class="redo icon"></i>
+              </button>
+              <div class="filter-buttons ui buttons blue">
+                <button class="ui button">Tous</button>
+                <button class="ui button">Envoyés</button>
+                <button class="ui button">Reçus</button>
+              </div>
+            </div>
+            <div class="filter-right">
+              <div class="filter-dropdowns">
+                <div class="filter-1">
+                  Filtrer:
+                  <div class="ui selection dropdown">
+                    <input type="hidden" name="gender" />
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Tous</div>
+                    <div class="menu">
+                      <div class="item" data-value="Tous">Tous</div>
+                      <div class="item" data-value="En attente">En attente</div>
+                      <div class="item" data-value="À fermer">À fermer</div>
+                      <div class="item" data-value="Rejetés">Rejetés</div>
+                      <div class="item" data-value="À signer">À signer</div>
+                      <div class="item" data-value="À télécharger">
+                        À télécharger
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filter-2">
+                  Classer par:
+                  <div class="ui selection dropdown">
+                    <input type="hidden" name="gender" />
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Date de création</div>
+                    <div class="menu">
+                      <div class="item" data-value="Date de création">
+                        Date de création
+                      </div>
+                      <div class="item" data-value="Date limite de signature">
+                        Date limite de signature
+                      </div>
+                      <div class="item" data-value="Sujet">Sujet</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-search">
+                <div class="ui icon input">
+                  <input
+                    class="prompt"
+                    type="text"
+                    placeholder="Saisir les critères de filtrage..."
+                  />
+                  <i class="search icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-body">Aucun dossier trouvé !</div>
+        </div>
+        <div class="recherche">
+          <div class="filters">
+            <div class="filter-left">
+              <div class="filter-search">
+                <div class="ui icon input">
+                  <input
+                    class="prompt"
+                    type="text"
+                    placeholder="Saisir les critères de filtrage..."
+                  />
+                  <i class="search icon"></i>
+                </div>
+              </div>
+              <div class="filter-checkboxes">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden" />
+                  <label>Sujet/Référence</label>
+                </div>
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden" />
+                  <label>Destinataire</label>
+                </div>
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden" />
+                  <label>Expéditeur</label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-right">
+              <div class="filter-dropdowns">
+                <div class="ui selection dropdown">
+                  <input type="hidden" name="gender" />
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Tous</div>
+                  <div class="menu">
+                    <div class="item" data-value="Tous">Tous</div>
+                    <div class="item" data-value="En attente">En attente</div>
+                    <div class="item" data-value="À fermer">À fermer</div>
+                    <div class="item" data-value="Rejetés">Rejetés</div>
+                    <div class="item" data-value="À signer">À signer</div>
+                    <div class="item" data-value="À télécharger">
+                      À télécharger
+                    </div>
+                  </div>
+                </div>
+                <div class="ui selection dropdown">
+                  <input type="hidden" name="gender" />
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Tous</div>
+                  <div class="menu">
+                    <div class="item" data-value="Tous">Tous</div>
+                    <div class="item" data-value="En attente">En attente</div>
+                    <div class="item" data-value="À fermer">À fermer</div>
+                    <div class="item" data-value="Rejetés">Rejetés</div>
+                    <div class="item" data-value="À signer">À signer</div>
+                    <div class="item" data-value="À télécharger">
+                      À télécharger
+                    </div>
+                  </div>
+                </div>
+                <div class="ui selection dropdown">
+                  <input type="hidden" name="gender" />
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Tous</div>
+                  <div class="menu">
+                    <div class="item" data-value="Tous">Tous</div>
+                    <div class="item" data-value="En attente">En attente</div>
+                    <div class="item" data-value="À fermer">À fermer</div>
+                    <div class="item" data-value="Rejetés">Rejetés</div>
+                    <div class="item" data-value="À signer">À signer</div>
+                    <div class="item" data-value="À télécharger">
+                      À télécharger
+                    </div>
+                  </div>
+                </div>
+                <div class="ui selection dropdown">
+                  <input type="hidden" name="gender" />
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Tous</div>
+                  <div class="menu">
+                    <div class="item" data-value="Tous">Tous</div>
+                    <div class="item" data-value="En attente">En attente</div>
+                    <div class="item" data-value="À fermer">À fermer</div>
+                    <div class="item" data-value="Rejetés">Rejetés</div>
+                    <div class="item" data-value="À signer">À signer</div>
+                    <div class="item" data-value="À télécharger">
+                      À télécharger
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-submit">
+                <button class="ui button teal">
+                  <i class="search icon teal"></i>
+                  Rechercher
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="main-body">
+            Rechercher des dossiers en utilisant le formulaire ci-dessus
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
