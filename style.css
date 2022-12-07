@@ -63,9 +63,10 @@ nav.header-nav {
   justify-content: space-between;
 }
 
+.dashboard-user-popup,
 .popup.tool-contacts-popup,
 .popup.tool-settings-popup {
-  max-width: unset;
+  max-width: unset !important;
 }
 
 .popup.tool-settings-popup {
@@ -153,7 +154,7 @@ main {
 }
 
 .main-inner {
-  width: 1440px;
+  width: min(1440px, 100vw);
 }
 
 .filters {
@@ -188,7 +189,7 @@ main {
 
 .main-body {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 body:has(.dossiers-button.active) .recherche {
@@ -218,4 +219,64 @@ body:has(.recherche-button.active) .dossiers {
 .recherche .filter-checkboxes {
   display: flex;
   gap: 1rem;
+}
+
+.dossiers-table {
+  padding-top: 1rem;
+}
+
+.dossiers-table table.ui.very.basic.collapsing.celled.table {
+  width: 100%;
+}
+
+.dossiers-table .img-cell {
+  max-width: 40px;
+}
+
+@media (width < 768px) {
+  .dossiers-table .img-cell {
+    max-width: 40%;
+  }
+}
+
+@media (width > 768px) {
+  .dossiers-table .icon-cell {
+    text-align: center !important;
+  }
+}
+
+.dossiers-table i {
+  color: teal;
+  font-size: 1.25rem;
+  margin: 0 !important;
+}
+
+.dossiers-table i.power.off.icon {
+  rotate: 90deg;
+}
+
+.dossiers-table .main-details-cell {
+  min-width: min(500px, 80vw);
+}
+
+.dossiers-table .title {
+  font-weight: 700;
+  font-size: 115%;
+  line-height: 1.5;
+}
+
+footer .ui.divider {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(0 0% 97.5%);
+}
+
+.footer-inner {
+  width: 1440px;
+  padding: 1rem 0rem;
 }

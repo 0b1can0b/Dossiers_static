@@ -8,6 +8,11 @@ $(".tool-settings").popup({
   position: "bottom right",
 });
 
+$(".dashboard-user").popup({
+  on: "click",
+  position: "bottom right",
+});
+
 // $('.menu .item').tab();
 
 // $('.contacts-popup-tabs .item').tab({
