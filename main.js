@@ -38,5 +38,3 @@ $(".filter-buttons > *").click(function () {
 });
 
 $(".dossiers-button").addClass("active");
-
-console.log("test if works");
