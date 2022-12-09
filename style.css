@@ -32,6 +32,13 @@ header {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 .dashboard {
   display: grid;
   gap: 0.5rem;
@@ -58,9 +65,23 @@ header {
   grid-row: 2/3;
 }
 
+@media (max-width: 768px) {
+  .dashboard-files .label {
+    font-size: 0.75rem !important;
+  }
+}
+
 nav.header-nav {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  nav.header-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 1rem;
+  }
 }
 
 .dashboard-user-popup,
@@ -114,7 +135,7 @@ nav.header-nav {
 }
 
 .tool-settings-popup-inner .ui.table a {
-  color: teal;
+  color: violet;
 }
 
 .tool-settings-popup-inner .ui.table a:hover {
@@ -123,7 +144,7 @@ nav.header-nav {
 
 .tool-settings-popup-inner .ui.table .info.circle {
   font-size: 125%;
-  color: teal;
+  color: violet;
 }
 
 .ui.dropdown .menu > * {
@@ -165,6 +186,12 @@ main {
   padding: 0.75rem;
 }
 
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+}
+
 .dossiers .filter-right {
   flex: 1;
 
@@ -173,9 +200,21 @@ main {
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .dossiers .filter-right {
+    flex-direction: column;
+  }
+}
+
 .dossiers .filter-dropdowns {
   display: flex;
   gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .dossiers .filter-dropdowns {
+    flex-direction: column;
+  }
 }
 
 .filter-dropdowns .ui.dropdown,
@@ -185,6 +224,12 @@ main {
 
 .filter-search .ui.input > input::placeholder {
   color: #000;
+}
+
+@media (max-width: 768px) {
+  .filter-search {
+    max-width: 88vw;
+  }
 }
 
 .main-body {
@@ -233,20 +278,20 @@ body:has(.recherche-button.active) .dossiers {
   max-width: 40px;
 }
 
-@media (width < 768px) {
+@media (max-width: 768px) {
   .dossiers-table .img-cell {
     max-width: 40%;
   }
 }
 
-@media (width > 768px) {
+@media (min-width: 768px) {
   .dossiers-table .icon-cell {
     text-align: center !important;
   }
 }
 
 .dossiers-table i {
-  color: teal;
+  color: violet;
   font-size: 1.25rem;
   margin: 0 !important;
 }
