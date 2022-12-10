@@ -116,9 +116,9 @@ nav.header-nav {
   margin-top: 7.5px;
 }
 
-.tool-settings-popup-inner .user ~ .divider {
-  /* margin: 0; */
-}
+/* .tool-settings-popup-inner .user ~ .divider {
+  margin: 0;
+} */
 
 .tool-settings-popup-inner .ui.table {
   /* margin: -7.5px 0 0 0; */
@@ -274,13 +274,22 @@ body:has(.recherche-button.active) .dossiers {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .dossiers-table {
+    overflow-x: scroll;
+  }
+  .dossiers-table table.ui.very.basic.collapsing.celled.table {
+    min-width: 800px;
+  }
+}
+
 .dossiers-table .img-cell {
-  max-width: 40px;
+  max-width: 25px;
 }
 
 @media (max-width: 768px) {
   .dossiers-table .img-cell {
-    max-width: 40%;
+    max-width: 20vw;
   }
 }
 
@@ -304,6 +313,11 @@ body:has(.recherche-button.active) .dossiers {
   min-width: min(500px, 80vw);
 }
 
+@media (max-width: 768px) {
+  .dossiers-table .main-details-cell {
+    min-width: auto !important;
+  }
+}
 .dossiers-table .title {
   font-weight: 700;
   font-size: 115%;
