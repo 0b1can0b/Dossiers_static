@@ -190,6 +190,12 @@ main {
   .filters {
     flex-direction: column;
   }
+
+  .dossiers .filter-left,
+  .dossiers .filter-1,
+  .dossiers .filter-2 {
+    text-align: -webkit-center;
+  }
 }
 
 .dossiers .filter-right {
@@ -203,6 +209,7 @@ main {
 @media (max-width: 768px) {
   .dossiers .filter-right {
     flex-direction: column;
+    align-self: center;
   }
 }
 
@@ -261,13 +268,40 @@ body:has(.recherche-button.active) .dossiers {
   align-items: flex-end;
 }
 
+@media (max-width: 768px) {
+  .recherche .filter-left,
+  .recherche .filter-right {
+    align-items: center;
+  }
+}
+
 .recherche .filter-checkboxes {
   display: flex;
   gap: 1rem;
 }
 
+@media (max-width: 768px) {
+  .recherche .filter-checkboxes {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .recherche .filter-dropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 .dossiers-table {
   padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .dossiers-table {
+    padding: 1rem 2rem;
+  }
 }
 
 .dossiers-table table.ui.very.basic.collapsing.celled.table {
